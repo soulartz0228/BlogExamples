@@ -1,0 +1,10 @@
+Options Multiviews
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+order deny,allow
+allow from rexample.kro.kr/ex1
+allow from rexample.kro.kr/ex2
+deny from rexample.kro.kr/ex1.html
+deny from rexample.kro.kr/ex2.html
