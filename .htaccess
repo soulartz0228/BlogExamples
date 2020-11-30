@@ -1,10 +1,7 @@
-Options Multiviews
+RewriteEngine on
 
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-order deny,allow
-allow from rexample.kro.kr/ex1
-allow from rexample.kro.kr/ex2
-deny from rexample.kro.kr/ex1.html
-deny from rexample.kro.kr/ex2.html
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
