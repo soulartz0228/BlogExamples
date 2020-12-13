@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>텍스트 정중앙에 반응형으로 배치하기</title>
+</head>
+<body>
+  <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      
+      @font-face {
+
+  font-family: Noto Sans KR;
+
+  src: local('Noto Sans KR');
+
+  unicode-range: U+AC00-D7AF;
+
+}
+
+@font-face {
+
+  font-family: Inter;
+
+  src: local('Inter');
+
+}
+
+.center {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: absolute; left: 50%; top: 50%; 
+  transform: translate(-50%, -50%);
+  }
+</style>
+
+
+<div class="center">
+  <div class="container">
+    <h1>Center Text Example</h1>
+    <p>텍스트 정중앙에 배치하기 예제입니다.</p>
+
+</body>
+</html>
