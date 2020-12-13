@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -14,23 +14,6 @@
       @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
       
-      @font-face {
-
-  font-family: Noto Sans KR;
-
-  src: local('Noto Sans KR');
-
-  unicode-range: U+AC00-D7AF;
-
-}
-
-@font-face {
-
-  font-family: Inter;
-
-  src: local('Inter');
-
-}
 
 .center {
   text-align: center;
@@ -39,6 +22,14 @@
   position: absolute; left: 50%; top: 50%; 
   transform: translate(-50%, -50%);
   }
+      
+  .center h1 {
+      font-family: Inter;
+      }
+      
+ .center p {
+     font-family: Noto Sans KR;
+      }
 </style>
 
 
@@ -46,6 +37,8 @@
   <div class="container">
     <h1>Center Text Example</h1>
     <p>텍스트 정중앙에 배치하기 예제입니다.</p>
-
+      <a href="/"><button type="button" class="btn btn-primary">블로그로 돌아가기</button></a>
+    </div>
+    </div>
 </body>
 </html>
