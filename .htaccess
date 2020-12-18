@@ -9,3 +9,5 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 order deny,allow
 
 deny from all
+
+ErrorDocument 404 /center
